@@ -1,6 +1,10 @@
 package com.springlearning.vasanth.springdependencyinjectionpractices.services;
 
-public class GreetingServiceImpl implements GreetingService {
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class GreetingHelloServiceImpl implements GreetingService {
 
     public static final String GREET_HELLO="Hello!!!";
 
