@@ -13,8 +13,8 @@ public class ConstructorInjectController {
         return greetingService.sayHello();
     }
 
-
-    public ConstructorInjectController(@Qualifier("greetingByeService") final GreetingService greetingService) {
+    //@Qualifier("greetingByeService")
+    public ConstructorInjectController(final GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 }
